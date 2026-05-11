@@ -130,14 +130,15 @@ export default function Products() {
           </div>
         </div>
         <div className="card muted" style={{ alignSelf: 'start' }}>
-          <div style={{ fontWeight: 650, color: 'var(--text)', marginBottom: '0.5rem' }}>
-            Tips
-          </div>
-          <ul style={{ margin: 0, paddingLeft: '1.1rem' }}>
-            <li>Password rules on register: upper, lower, and a number.</li>
-            <li>Try coupon <b>SAVE10</b> at checkout (demo seed).</li>
-          </ul>
-        </div>
+  <div style={{ fontWeight: 650, color: 'var(--text)', marginBottom: '0.5rem' }}>
+    Why Shop With Us?
+  </div>
+  <ul style={{ margin: 0, paddingLeft: '1.1rem' }}>
+    <li>Carefully selected products with premium quality.</li>
+    <li>Fast delivery and secure checkout experience.</li>
+    <li>New arrivals and exclusive deals every week.</li>
+  </ul>
+</div>
       </div>
 
       <ErrorBanner message={error} />

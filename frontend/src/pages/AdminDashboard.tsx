@@ -45,10 +45,13 @@ export default function AdminDashboard() {
       <h1 style={{ marginTop: 0 }}>Admin</h1>
       <ErrorBanner message={error} />
       <div className="grid cols-4">
-        <div className="card">
+        <Link to="/admin/users" className="card" style={{ display: 'block' }}>
           <div className="muted">Users</div>
           <div style={{ fontSize: 28, fontWeight: 900 }}>{stats?.users ?? '—'}</div>
-        </div>
+          <div className="muted" style={{ marginTop: 6, fontSize: 13 }}>
+            Manage users →
+          </div>
+        </Link>
         <Link to="/admin/products" className="card" style={{ display: 'block' }}>
           <div className="muted">Products</div>
           <div style={{ fontSize: 28, fontWeight: 900 }}>{stats?.products ?? '—'}</div>

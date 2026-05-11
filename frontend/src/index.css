@@ -154,3 +154,118 @@ textarea {
   font-size: 0.75rem;
   color: var(--muted);
 }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.75rem;
+}
+
+.badge-success {
+  border-color: rgba(52, 211, 153, 0.35);
+  background: rgba(52, 211, 153, 0.12);
+}
+.badge-danger {
+  border-color: rgba(248, 113, 113, 0.35);
+  background: rgba(248, 113, 113, 0.12);
+}
+.badge-info {
+  border-color: rgba(56, 189, 248, 0.35);
+  background: rgba(56, 189, 248, 0.12);
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  z-index: 50;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.65);
+  border: 0;
+  z-index: 0;
+}
+
+.modal {
+  width: min(720px, calc(100vw - 2rem));
+  z-index: 1;
+}
+.modal-sm {
+  width: min(520px, calc(100vw - 2rem));
+}
+.modal-lg {
+  width: min(980px, calc(100vw - 2rem));
+}
+.modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+.modal-body {
+  display: grid;
+  gap: 0.75rem;
+}
+.modal-foot {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.toast-viewport {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  display: grid;
+  gap: 0.6rem;
+  z-index: 60;
+  width: min(380px, calc(100vw - 2rem));
+}
+.toast {
+  background: rgba(17, 24, 39, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 0.75rem 0.85rem;
+  backdrop-filter: blur(10px);
+}
+.toast-success {
+  border-color: rgba(52, 211, 153, 0.35);
+}
+.toast-error {
+  border-color: rgba(248, 113, 113, 0.35);
+}
+.toast-info {
+  border-color: rgba(56, 189, 248, 0.35);
+}
+.toast-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.toast-title {
+  font-weight: 800;
+}
+.toast-msg {
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.toast-x {
+  background: transparent;
+  border: 0;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+}

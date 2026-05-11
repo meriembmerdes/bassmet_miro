@@ -20,6 +20,7 @@ import OrderDetails from './pages/OrderDetails';
 import Profile from './pages/Profile';
 import AdminDashboard from './pages/AdminDashboard';
 import AdminProducts from './pages/AdminProducts';
+import AdminUsers from './pages/AdminUsers';
 
 export default function App() {
   const dispatch = useAppDispatch();
@@ -50,6 +51,7 @@ export default function App() {
         <Route element={<AdminRoute />}>
           <Route path="admin" element={<AdminDashboard />} />
           <Route path="admin/products" element={<AdminProducts />} />
+          <Route path="admin/users" element={<AdminUsers />} />
         </Route>
       </Route>
     </Routes>
